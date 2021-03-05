@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import InsertInvitationIcon from '@material-ui/icons/InsertInvitation';
 import { makeStyles } from '@material-ui/styles';
-import Utilites from '../gesturecontrol';
 import Utilities from '../gesturecontrol';
 
 const useStyles = makeStyles(theme => ({
