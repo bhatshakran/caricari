@@ -18,5 +18,5 @@ a {
 	display: flex;
 	flex-direction: row;
 	color: '#fff';
-	touch-action: active;
+	touch-action: none;
 }
