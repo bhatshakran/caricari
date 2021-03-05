@@ -7,7 +7,7 @@ import Utilities from '../gesturecontrol';
 const useStyles = makeStyles(theme => ({
 	circleHolder: {
 		position: 'absolute',
-		bottom: '0',
+		bottom: '30px',
 	},
 	cardItem: {
 		width: '144px',
@@ -15,6 +15,11 @@ const useStyles = makeStyles(theme => ({
 		borderRadius: '50%',
 		border: '1px solid #fff',
 		marginRight: '20px',
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center',
+		justifyContent: 'center',
+		fontFamily: 'Libre Baskerville',
 	},
 	symbol: {
 		color: '#fff',
@@ -24,6 +29,8 @@ const useStyles = makeStyles(theme => ({
 	},
 	cardTxt: {
 		color: '#fff',
+		fontSize: '0.7rem',
+		fontFamily: 'Nunito',
 	},
 }));
 const GestureCarousel = () => {
@@ -38,8 +45,8 @@ const GestureCarousel = () => {
 					<div className={classes.symbol}>
 						<FavoriteBorderIcon />
 					</div>
-					<div className={classes.number}>0</div>
-					<div className={classes.cardTxt}>Label</div>
+					<div className={classes.number}>456</div>
+					<div className={classes.cardTxt}>Likes everyday</div>
 				</div>
 				<div className={classes.cardItem}>
 					<div className={classes.symbol}>

@@ -28,9 +28,7 @@ export default function Utilities() {
 	};
 	if (window.PointerEvent) {
 		window.addEventListener('pointerdown', gestureStart);
-
 		window.addEventListener('pointermove', gestureMove);
-
 		window.addEventListener('pointerup', gestureEnd);
 	} else {
 		window.addEventListener('touchdown', gestureStart);
@@ -38,10 +36,5 @@ export default function Utilities() {
 		window.addEventListener('touchmove', gestureMove);
 
 		window.addEventListener('touchup', gestureEnd);
-		window.addEventListener('mousedown', gestureStart);
-
-		window.addEventListener('mousemove', gestureMove);
-
-		window.addEventListener('mouseup', gestureEnd);
 	}
 }
