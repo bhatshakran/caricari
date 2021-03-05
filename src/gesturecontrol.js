@@ -26,15 +26,22 @@ export default function Utilities() {
 	const gestureEnd = e => {
 		moving = false;
 	};
+	if (window.PointerEvent) {
+		window.addEventListener('pointerdown', gestureStart);
 
-	window.addEventListener('touchdown', gestureStart);
+		window.addEventListener('pointermove', gestureMove);
 
-	window.addEventListener('touchmove', gestureMove);
+		window.addEventListener('pointerup', gestureEnd);
+	} else {
+		window.addEventListener('touchdown', gestureStart);
 
-	window.addEventListener('touchup', gestureEnd);
-	window.addEventListener('mousedown', gestureStart);
+		window.addEventListener('touchmove', gestureMove);
 
-	window.addEventListener('mousemove', gestureMove);
+		window.addEventListener('touchup', gestureEnd);
+		window.addEventListener('mousedown', gestureStart);
 
-	window.addEventListener('mouseup', gestureEnd);
+		window.addEventListener('mousemove', gestureMove);
+
+		window.addEventListener('mouseup', gestureEnd);
+	}
 }
