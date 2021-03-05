@@ -32,4 +32,9 @@ export default function Utilities() {
 	window.addEventListener('touchmove', gestureMove);
 
 	window.addEventListener('touchup', gestureEnd);
+	window.addEventListener('mousedown', gestureStart);
+
+	window.addEventListener('mousemove', gestureMove);
+
+	window.addEventListener('mousemove', gestureEnd);
 }
