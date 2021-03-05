@@ -36,5 +36,5 @@ export default function Utilities() {
 
 	window.addEventListener('mousemove', gestureMove);
 
-	window.addEventListener('mousemove', gestureEnd);
+	window.addEventListener('mouseup', gestureEnd);
 }
