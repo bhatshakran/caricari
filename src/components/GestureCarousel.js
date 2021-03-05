@@ -31,7 +31,7 @@ const GestureCarousel = () => {
 	const classes = useStyles();
 	useEffect(() => {
 		Utilities();
-	});
+	}, []);
 	return (
 		<div className={`gesture-carousel ${classes.circleHolder}`}>
 			<div className='track'>

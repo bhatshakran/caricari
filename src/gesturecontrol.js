@@ -27,17 +27,9 @@ export default function Utilities() {
 		moving = false;
 	};
 
-	// if (window.PointerEvent) {
-	// 	window.addEventListener('pointerdown', gestureStart);
-
-	// 	window.addEventListener('pointermove', gestureMove);
-
-	// 	window.addEventListener('pointerup', gestureEnd);
-	// } else {
 	window.addEventListener('touchdown', gestureStart);
 
 	window.addEventListener('touchmove', gestureMove);
 
 	window.addEventListener('touchup', gestureEnd);
-	// }
 }
