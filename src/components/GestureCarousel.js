@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
 		bottom: '30px',
 	},
 	cardItem: {
-		width: '144px',
+		minWidth: '144px',
 		height: '144px',
 		borderRadius: '50%',
 		border: '1px solid #fff',

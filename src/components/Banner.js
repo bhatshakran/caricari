@@ -10,6 +10,13 @@ const useStyles = makeStyles(theme => ({
 		width: '100%',
 		position: 'relative',
 		overflow: 'hidden',
+		height: '600px',
+		[theme.breakpoints.up('sm')]: {
+			height: '500px',
+		},
+		[theme.breakpoints.up('md')]: {
+			height: '862px',
+		},
 	},
 	bannerImg: {
 		width: '100%',
@@ -18,11 +25,11 @@ const useStyles = makeStyles(theme => ({
 
 		[theme.breakpoints.up('sm')]: {
 			transform: 'scaleX(1)',
-			height: '500px',
+			height: '100%',
 		},
 		[theme.breakpoints.up('md')]: {
 			transform: 'scaleX(1)',
-			height: '862px',
+			height: '100%',
 		},
 	},
 	text: {
