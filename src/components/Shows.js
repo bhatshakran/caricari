@@ -25,6 +25,9 @@ const useStyles = makeStyles(theme => ({
 	heading: {
 		fontFamily: 'Libre Baskerville',
 		color: '#fff',
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '1.5rem',
+		},
 	},
 	line: {
 		minHeight: '3px',
@@ -97,13 +100,13 @@ const useStyles = makeStyles(theme => ({
 		color: '#E5C558',
 		position: 'absolute',
 		right: '8rem',
-		top: '9rem',
+		top: '8.5rem',
 		fontFamily: 'Nunito',
 		[theme.breakpoints.down('md')]: {
 			right: '2rem',
 		},
 		[theme.breakpoints.down('sm')]: {
-			right: '1rem',
+			right: '0.8rem',
 		},
 	},
 }));

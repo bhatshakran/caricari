@@ -11,11 +11,10 @@ const useStyles = makeStyles(theme => ({
 		bottom: '30px',
 	},
 	cardItem: {
-		minWidth: '144px',
+		maxWidth: '144px',
 		height: '144px',
 		borderRadius: '50%',
 		border: '1px solid #fff',
-		marginRight: '20px',
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
@@ -45,7 +44,7 @@ const GestureCarousel = () => {
 					// when window width is >= 640px
 					640: {
 						width: 640,
-						slidesPerView: 4,
+						slidesPerView: 3,
 					},
 				}}
 				spaceBetween={70}

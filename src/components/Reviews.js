@@ -25,6 +25,9 @@ const useStyles = makeStyles(theme => ({
 	reviewsHeading: {
 		color: '#fff',
 		fontFamily: 'Libre Baskerville',
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '1.5rem',
+		},
 	},
 	line: {
 		minHeight: '3px',
