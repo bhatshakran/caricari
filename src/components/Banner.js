@@ -3,7 +3,6 @@ import Navbar from './Navbar';
 import cari from '../images/cari.png';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
-import GestureCarousel from './GestureCarousel';
 
 const useStyles = makeStyles(theme => ({
 	banner: {
@@ -71,7 +70,6 @@ const Banner = () => {
 						and never miss out.
 					</Typography>
 				</div>
-				<GestureCarousel />
 			</div>
 		</>
 	);

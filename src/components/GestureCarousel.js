@@ -7,8 +7,18 @@ import 'swiper/swiper.scss';
 
 const useStyles = makeStyles(theme => ({
 	circleHolder: {
+		background: '#0A0B1A',
+		width: '100%',
+		height: '200px',
+		position: 'relative',
+		overflow: 'hidden',
+	},
+	wrapper: {
+		width: '100%',
 		position: 'absolute',
-		bottom: '30px',
+		left: '20%',
+		top: '0',
+		height: '100%',
 	},
 	cardItem: {
 		width: '144px',
@@ -33,13 +43,14 @@ const useStyles = makeStyles(theme => ({
 		fontFamily: 'Nunito',
 	},
 }));
+
 const GestureCarousel = () => {
 	const classes = useStyles();
 
 	return (
 		<div className={`gesture-carousel ${classes.circleHolder}`}>
 			<Swiper
-				className='track swiper-container'
+				className={` ${classes.wrapper} swiper-container`}
 				spaceBetween={70}
 				breakpoints={{
 					// when window width is >= 640px
