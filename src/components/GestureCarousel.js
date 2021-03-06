@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
 		bottom: '30px',
 	},
 	cardItem: {
-		maxWidth: '144px',
+		width: '144px',
 		height: '144px',
 		borderRadius: '50%',
 		border: '1px solid #fff',
@@ -39,16 +39,19 @@ const GestureCarousel = () => {
 	return (
 		<div className={`gesture-carousel ${classes.circleHolder}`}>
 			<Swiper
-				className='track'
+				className='track swiper-container'
+				spaceBetween={70}
 				breakpoints={{
 					// when window width is >= 640px
 					640: {
 						width: 640,
 						slidesPerView: 3,
 					},
-				}}
-				spaceBetween={70}
-				slidesPerView={3}>
+					320: {
+						width: 320,
+						slidesPerView: 2,
+					},
+				}}>
 				<SwiperSlide className={classes.cardItem}>
 					<div className={classes.symbol}>
 						<FavoriteBorderIcon />
