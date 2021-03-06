@@ -28,7 +28,6 @@ a {
 	flex-direction: row;
 	justify-content: center;
 	color: '#fff';
-	touch-action: none;
 	padding: 0 0 0 1rem;
 }
 .swiper-container {
