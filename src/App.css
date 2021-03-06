@@ -12,10 +12,7 @@ a {
 	color: #fff;
 	text-decoration: none;
 }
-.gesture-carousel {
-	width: 100vw;
-	overflow: hidden;
-}
+
 .swiper-container {
 	width: 480px;
 }

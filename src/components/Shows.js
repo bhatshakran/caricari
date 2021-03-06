@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme => ({
 		paddingLeft: '8rem',
 		paddingTop: '8rem',
 		width: '100%',
+		position: 'relative',
 		[theme.breakpoints.down('md')]: {
 			paddingLeft: '1rem',
 		},
@@ -72,14 +73,38 @@ const useStyles = makeStyles(theme => ({
 	more: {
 		display: 'flex',
 		alignItems: 'center',
+		color: '#0259EB',
+		cursor: 'pointer',
 	},
 	moreInfo: {
 		marginLeft: '1rem',
+		color: '#0259EB',
+		'&:hover': {
+			color: '#fff',
+		},
 	},
 	cardRec: {
 		position: 'absolute',
 		bottom: '3px',
 		right: '5px',
+		color: 'hotpink',
+		cursor: 'pointer',
+		'&:hover': {
+			color: 'purple',
+		},
+	},
+	viewAll: {
+		color: '#E5C558',
+		position: 'absolute',
+		right: '8rem',
+		top: '9rem',
+		fontFamily: 'Nunito',
+		[theme.breakpoints.down('md')]: {
+			right: '2rem',
+		},
+		[theme.breakpoints.down('sm')]: {
+			right: '1rem',
+		},
 	},
 }));
 const Shows = () => {
@@ -92,6 +117,9 @@ const Shows = () => {
 					Upcoming Shows
 				</Typography>
 				<span className={classes.line}></span>
+				<Link to='/' className={classes.viewAll}>
+					View All
+				</Link>
 				<Swiper
 					className={`${classes.cardContainer} swiper-container`}
 					breakpoints={{

@@ -45,11 +45,11 @@ const GestureCarousel = () => {
 					// when window width is >= 640px
 					640: {
 						width: 640,
-						slidesPerView: 3,
+						slidesPerView: 4,
 					},
 				}}
-				spaceBetween={20}
-				slidesPerView={2}>
+				spaceBetween={70}
+				slidesPerView={3}>
 				<SwiperSlide className={classes.cardItem}>
 					<div className={classes.symbol}>
 						<FavoriteBorderIcon />

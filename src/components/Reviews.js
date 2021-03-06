@@ -8,12 +8,15 @@ import isaac from '../images/Imgisaac.png';
 import jummy from '../images/Imgjummy.png';
 import italy from '../images/italy.png';
 import us from '../images/us.png';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 const useStyles = makeStyles(theme => ({
 	reviewsContainer: {
 		background: '#0A0B1A',
 		paddingLeft: '8rem',
 		paddingTop: '8rem',
+		position: 'relative',
 		width: '100%',
 		[theme.breakpoints.down('md')]: {
 			paddingLeft: '1rem',
@@ -69,6 +72,24 @@ const useStyles = makeStyles(theme => ({
 	flagHolder: {
 		display: 'flex',
 	},
+	pagination: {
+		color: '#fff',
+		display: 'flex',
+		alignItems: 'center',
+		position: 'absolute',
+		right: '8rem',
+		top: '9rem',
+		fontFamily: 'Nunito',
+		[theme.breakpoints.down('sm')]: {
+			right: '1rem',
+		},
+	},
+	nmbr: {
+		marginRight: '2rem',
+		[theme.breakpoints.down('sm')]: {
+			marginRight: '0.7rem',
+		},
+	},
 }));
 const Reviews = () => {
 	const classes = useStyles();
@@ -79,6 +100,11 @@ const Reviews = () => {
 			</Typography>
 
 			<span className={classes.line}></span>
+			<div className={classes.pagination}>
+				<p className={classes.nmbr}>1/12</p>
+				<ArrowBackIcon />
+				<ArrowForwardIcon />
+			</div>
 			<Swiper
 				className={`${classes.reviewCards} swiper-container`}
 				breakpoints={{
