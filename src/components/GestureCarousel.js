@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import InsertInvitationIcon from '@material-ui/icons/InsertInvitation';
 import { makeStyles } from '@material-ui/styles';

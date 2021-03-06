@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
 		position: 'absolute',
 		top: '55px',
 		left: '0%',
-		height: '30vh',
+		height: '100vh',
 		zIndex: '4',
 		alignItems: 'center',
 		[theme.breakpoints.up('sm')]: {
