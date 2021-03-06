@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import InsertInvitationIcon from '@material-ui/icons/InsertInvitation';
 import { makeStyles } from '@material-ui/styles';
-import Utilities from '../gesturecontrol';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.scss';
 
 const useStyles = makeStyles(theme => ({
 	circleHolder: {
@@ -35,41 +36,49 @@ const useStyles = makeStyles(theme => ({
 }));
 const GestureCarousel = () => {
 	const classes = useStyles();
-	useEffect(() => {
-		Utilities();
-	}, []);
+
 	return (
 		<div className={`gesture-carousel ${classes.circleHolder}`}>
-			<div className='track'>
-				<div className={classes.cardItem}>
+			<Swiper
+				className='track'
+				breakpoints={{
+					// when window width is >= 640px
+					640: {
+						width: 640,
+						slidesPerView: 3,
+					},
+				}}
+				spaceBetween={20}
+				slidesPerView={2}>
+				<SwiperSlide className={classes.cardItem}>
 					<div className={classes.symbol}>
 						<FavoriteBorderIcon />
 					</div>
 					<div className={classes.number}>456</div>
 					<div className={classes.cardTxt}>Likes everyday</div>
-				</div>
-				<div className={classes.cardItem}>
+				</SwiperSlide>
+				<SwiperSlide className={classes.cardItem}>
 					<div className={classes.symbol}>
 						<InsertInvitationIcon />
 					</div>
 					<div className={classes.number}>0</div>
 					<div className={classes.cardTxt}>Label</div>
-				</div>
-				<div className={classes.cardItem}>
+				</SwiperSlide>
+				<SwiperSlide className={classes.cardItem}>
 					<div className={classes.symbol}>
 						<InsertInvitationIcon />
 					</div>
 					<div className={classes.number}>0</div>
 					<div className={classes.cardTxt}>Label</div>
-				</div>
-				<div className={classes.cardItem}>
+				</SwiperSlide>
+				<SwiperSlide className={classes.cardItem}>
 					<div className={classes.symbol}>
 						<InsertInvitationIcon />
 					</div>
 					<div className={classes.number}> 0 </div>
 					<div className={classes.cardTxt}>Label</div>{' '}
-				</div>
-			</div>
+				</SwiperSlide>
+			</Swiper>
 		</div>
 	);
 };

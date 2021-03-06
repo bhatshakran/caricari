@@ -47,7 +47,7 @@ const useStyles = makeStyles(theme => ({
 		color: '#fff',
 		position: 'relative',
 		[theme.breakpoints.down('md')]: {
-			maxWidth: '200px',
+			maxWidth: '300px',
 		},
 	},
 	label: {
