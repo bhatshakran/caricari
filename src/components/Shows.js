@@ -40,12 +40,15 @@ const useStyles = makeStyles(theme => ({
 		minWidth: '268px',
 		height: '387px',
 		borderRadius: '8px',
-		boxShadow: '3px 12px 12px  #301A68 , -3px -12px 12px  #301A68 ',
+		boxShadow: '12px 0px 0px  #301A68 , 12px -12px 0px  #301A68 ',
 		marginRight: '2rem',
 		marginTop: '53px',
 		background: '#111229',
 		color: '#fff',
 		position: 'relative',
+		[theme.breakpoints.down('md')]: {
+			maxWidth: '200px',
+		},
 	},
 	label: {
 		color: '#682F26',

@@ -43,6 +43,10 @@ const useStyles = makeStyles(theme => ({
 		padding: '1.5rem 2rem',
 		display: 'flex',
 		flexDirection: 'column',
+		[theme.breakpoints.down('md')]: {
+			minWidth: '300px',
+			padding: '1rem',
+		},
 	},
 	authorInfo: {
 		marginLeft: '2rem',

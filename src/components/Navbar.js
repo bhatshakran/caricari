@@ -102,7 +102,7 @@ const useStyles = makeStyles(theme => ({
 		color: '#fff',
 		fontSize: '1.2rem',
 		'&:hover': {
-			color: 'skyblue',
+			color: 'darkblue',
 		},
 	},
 	toggleBtn: {
