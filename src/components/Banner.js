@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
 		width: '100%',
 		position: 'relative',
 		overflow: 'hidden',
-		height: '600px',
+		height: '450px',
 		[theme.breakpoints.up('sm')]: {
 			height: '500px',
 		},
@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
 		maxWidth: '600px',
 		[theme.breakpoints.down('sm')]: {
 			left: '20px',
+			top: '40%',
 		},
 	},
 	bannerTxt: {

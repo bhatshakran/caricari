@@ -7,9 +7,10 @@ import 'swiper/swiper.scss';
 
 const useStyles = makeStyles(theme => ({
 	circleHolder: {
+		margin: '0',
 		background: '#0A0B1A',
 		width: '100%',
-		height: '200px',
+		height: '144px',
 		position: 'relative',
 		overflow: 'hidden',
 	},
